@@ -1,0 +1,37 @@
+package com.net;
+
+import java.net.*;
+import java.io.*;
+
+public class URLWriteReader {
+	public static void main(String[] args) throws Exception {
+
+		URL url = new URL("http://www.google.co.in/search");
+
+
+		URLConnection connection = url.openConnection();
+
+		connection.setDoOutput(true);
+
+		OutputStreamWriter out = new OutputStreamWriter(connection
+				.getOutputStream());
+
+		out.write("q=books");
+		//out.write("&hl=en&btnG=Google+Search&meta=");
+
+		out.close();
+
+		connection.connect();
+		
+		BufferedReader in = new BufferedReader(new InputStreamReader(connection
+				.getInputStream()));
+
+		String decodedString;
+
+		while ((decodedString = in.readLine()) != null) {
+			System.out.println(decodedString);
+		}
+		in.close();
+
+	}
+}
