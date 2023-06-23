@@ -1,6 +1,6 @@
 package com.thread;
 
-public class HelloWithoutThread {
+public class HelloWithoutThread extends Exception{
 
 	// Keeps Thraed Name
 	String name = null;

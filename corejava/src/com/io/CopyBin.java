@@ -10,8 +10,8 @@ public class CopyBin {
 	 */
 	public static void main(String[] args) throws Exception{
 
-		String source= "c:/IMG_0046.JPG";
-		String target = "c:/baby.jpg";
+		String source= "D:/IOFilesFolder/java logo.PNG";
+		String target = "D:/IOFilesFolder/java logo1.PNG";	
 		
 		FileInputStream reader = new FileInputStream(source);
 		FileOutputStream writer = new FileOutputStream(target);

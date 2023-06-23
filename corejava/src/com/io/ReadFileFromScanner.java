@@ -10,7 +10,7 @@ public class ReadFileFromScanner {
 	 */
 	public static void main(String[] args) throws Exception{
 		
-		FileReader reader = new FileReader("c:/newtest.txt");
+		FileReader reader = new FileReader("D:/IOFilesFolder/newtest.txt");
 		
 		Scanner sc = new Scanner(reader);
 		while(sc.hasNext()){

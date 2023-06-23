@@ -1,6 +1,6 @@
 package com.thread;
 
-public class TestWithThread {
+public class TestThreadPriority {
 
 	public static void main(String[] args) {
 
@@ -24,3 +24,4 @@ public class TestWithThread {
 	}
 
 }
+

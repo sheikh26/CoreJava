@@ -7,7 +7,7 @@ public class FilePrimitiveDataRead {
 
 	public static void main(String[] args) throws Exception {
 
-		FileInputStream file = new FileInputStream("c:/primitivedata.dat");
+		FileInputStream file = new FileInputStream("D:/IOFilesFolder/newtest.txt");
 
 		DataInputStream in = new DataInputStream(file);
 

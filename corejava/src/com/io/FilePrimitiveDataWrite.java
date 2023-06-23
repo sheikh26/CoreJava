@@ -9,7 +9,7 @@ public class FilePrimitiveDataWrite {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		FileOutputStream file = new FileOutputStream("c:/primitivedata.dat");
+		FileOutputStream file = new FileOutputStream("D:/IOFilesFolder/newtest.txt");
 
 		DataOutputStream out = new DataOutputStream(file);
 

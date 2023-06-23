@@ -5,16 +5,17 @@ import java.sql.*;
 public class TestDB {
 
 	public static void main(String args[]) throws Exception {
-		//testSelect();
-		testInsert();
+		testSelect();
+		//testInsert();
+		//testPreparedInsert();
 	}
 
 	public static void testSelect() throws Exception {
 
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 
 		Connection conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/test", "root", "root");
+				"jdbc:mysql://localhost:3306/testperson","root","root");
 
 
 		Statement stmt = conn.createStatement();
@@ -38,18 +39,19 @@ public class TestDB {
 	}
 
 	public static void testInsert() throws Exception {
+System.out.println("Consol-----------");
+		//load a driver
+		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
-		Class.forName("com.mysql.jdbc.Driver").newInstance();
-
+		// create a connection
 		Connection conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost/test", "root", "root");
+				"jdbc:mysql://localhost:3306/testperson","root","root");
 
 		conn.setAutoCommit(false);
 
 		Statement stmt = conn.createStatement();
 
-		int i = stmt
-				.executeUpdate("INSERT into part values (5,'plat1','Green',1)");
+		int i = stmt.executeUpdate("INSERT into part values (1,'plat1','Green','1')");
 
 		System.out.print(i + " Record(s) Updated");
 
@@ -60,10 +62,10 @@ public class TestDB {
 
 	public static void testPreparedInsert() throws Exception {
 
-		Class.forName("com.mysql.jdbc.Driver").newInstance();
+		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
 		Connection conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost/test", "root", "root");
+				"jdbc:mysql://localhost:3306/testperson","root","root");
 
 		conn.setAutoCommit(false);
 

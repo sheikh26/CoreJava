@@ -11,7 +11,7 @@ public class AppentIntoTextFile {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		FileWriter writer = new FileWriter("c:/newtest.txt",true);
+		FileWriter writer = new FileWriter("D:/IOFilesFolder/newtest.txt",true);
 
 		PrintWriter printWriter = new PrintWriter(writer);
 

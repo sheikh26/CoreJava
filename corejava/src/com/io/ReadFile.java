@@ -10,7 +10,7 @@ public class ReadFile {
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		
-		FileReader reader = new FileReader("c:/test.txt");
+		FileReader reader = new FileReader("D:/IOFilesFolder/newtest.txt");
 		
 		int ch = reader.read();
 		char chr;

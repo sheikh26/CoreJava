@@ -12,7 +12,7 @@ public class CopyCon {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		String target= "c:/temp.txt";
+		String target= "D:/IOFilesFolder/newtest.txt";
 		
 		FileWriter writer = new FileWriter(target);
 		

@@ -10,8 +10,8 @@ public class CopyText {
 	 */
 	public static void main(String[] args) throws Exception{
 
-		String source= "c:/a.txt";
-		String target = "c:/b.txt";
+		String source= "D:/IOFilesFolder/newtest.txt";
+		String target = "D:/IOFilesFolder/newtest1.txt";
 		
 		FileReader reader = new FileReader(source);
 		FileWriter writer = new FileWriter(target);
